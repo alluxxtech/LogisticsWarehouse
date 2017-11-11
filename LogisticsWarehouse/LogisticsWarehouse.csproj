@@ -189,6 +189,9 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\StatusController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -211,6 +214,26 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Admin\Content\bootstrap.css" />
+    <Content Include="Areas\Admin\Content\custom.css" />
+    <Content Include="Areas\Admin\Content\font-awesome.css" />
+    <Content Include="Areas\Admin\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="Areas\Admin\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Areas\Admin\images\1.png" />
+    <Content Include="Areas\Admin\images\2.png" />
+    <Content Include="Areas\Admin\images\3.png" />
+    <Content Include="Areas\Admin\images\4.png" />
+    <Content Include="Areas\Admin\images\find_user.png" />
+    <Content Include="Areas\Admin\Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Scripts\custom.js" />
+    <Content Include="Areas\Admin\Scripts\dataTables\dataTables.bootstrap.css" />
+    <Content Include="Areas\Admin\Scripts\dataTables\dataTables.bootstrap.js" />
+    <Content Include="Areas\Admin\Scripts\dataTables\jquery.dataTables.js" />
+    <Content Include="Areas\Admin\Scripts\jquery-1.10.2.js" />
+    <Content Include="Areas\Admin\Scripts\jquery.metisMenu.js" />
+    <Content Include="Areas\Admin\Scripts\morris\morris-0.4.3.min.css" />
+    <Content Include="Areas\Admin\Scripts\morris\morris.js" />
+    <Content Include="Areas\Admin\Scripts\morris\raphael-2.1.0.min.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -222,6 +245,20 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Areas\Admin\fonts\fontawesome-webfontba72.eot" />
+    <Content Include="Areas\Admin\fonts\fontawesome-webfontba72.ttf" />
+    <Content Include="Areas\Admin\fonts\fontawesome-webfontba72.woff" />
+    <Content Include="Areas\Admin\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Areas\Admin\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Areas\Admin\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Areas\Admin\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Areas\Admin\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Status\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Status\Create.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -291,6 +328,12 @@
     <EmbeddedResource Include="Migrations\201711101736049_DataBase is Complite%28without Archive%29.resx">
       <DependentUpon>201711101736049_DataBase is Complite%28without Archive%29.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{C0466F61-9373-4732-A4D3-07E1EBCA5476}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
