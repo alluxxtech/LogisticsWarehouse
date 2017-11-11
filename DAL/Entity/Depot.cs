@@ -13,7 +13,9 @@ namespace DAL.Entity
     {
         [Key]
         public int Id { get; set; }
+        [Required, StringLength(maximumLength: 256)]
         public string Name { get; set; }
+        [Required, StringLength(maximumLength: 256)]
         public string Address { get; set; }
         [ForeignKey("City")]
         public int CityId { get; set; }

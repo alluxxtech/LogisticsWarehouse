@@ -74,7 +74,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICountryRepository.cs" />
     <Compile Include="Abstract\IEFContext.cs" />
+    <Compile Include="Concrete\CountryRepository.cs" />
     <Compile Include="Entity\ProductAction.cs" />
     <Compile Include="Entity\Archive.cs" />
     <Compile Include="Entity\City.cs" />
@@ -96,9 +98,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Concrete\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

@@ -19,7 +19,6 @@ namespace DAL.Entity.Identity
         [ForeignKey("Company")]
         public int CompanyId { get; set; }
         public Company Company { get; set; }
-       
         [ForeignKey("UserPosition")]
         public int PositionId { get; set; }
         public UserPosition UserPosition { get; set; }
