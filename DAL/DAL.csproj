@@ -97,6 +97,10 @@
     <Compile Include="Migrations\201711101743369_DataBase is Complite%28without Archive%29.Designer.cs">
       <DependentUpon>201711101743369_DataBase is Complite%28without Archive%29.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711121241208_change UserProfiles%28del DepotId%29.cs" />
+    <Compile Include="Migrations\201711121241208_change UserProfiles%28del DepotId%29.Designer.cs">
+      <DependentUpon>201711121241208_change UserProfiles%28del DepotId%29.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -108,6 +112,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201711101743369_DataBase is Complite%28without Archive%29.resx">
       <DependentUpon>201711101743369_DataBase is Complite%28without Archive%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711121241208_change UserProfiles%28del DepotId%29.resx">
+      <DependentUpon>201711121241208_change UserProfiles%28del DepotId%29.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

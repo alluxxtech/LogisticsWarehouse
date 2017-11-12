@@ -22,8 +22,6 @@ namespace DAL.Entity.Identity
         [ForeignKey("UserPosition")]
         public int PositionId { get; set; }
         public UserPosition UserPosition { get; set; }
-        [ForeignKey("Depots")]
-        public int DepotId { get; set; }
         public virtual ICollection<Depot> Depots { get; set; }
     }
 }

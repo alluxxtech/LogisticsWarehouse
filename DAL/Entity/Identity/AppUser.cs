@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Entity.Identity
 {
-    public class AppUser :IdentityUser
+    public class AppUser : IdentityUser
     {
         [ForeignKey("UserProfile")]
         public int ProfileId { get; set; }
