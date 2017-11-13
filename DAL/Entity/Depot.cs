@@ -20,8 +20,8 @@ namespace DAL.Entity
         [ForeignKey("City")]
         public int CityId { get; set; }
         public City City { get; set; }
-        [ForeignKey("UserProfiles")]
-        public int UserProfileId { get; set; }
+        //[ForeignKey("UserProfiles")]
+        //public int UserProfileId { get; set; }
         public virtual ICollection<UserProfile> UserProfiles { get; set; }
         [ForeignKey("Company")]
         public int CompanyId { get; set; }

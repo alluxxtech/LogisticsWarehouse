@@ -17,7 +17,7 @@ namespace LogisticsWarehouse.App_Start
 
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
 
-            builder.RegisterModule(new DataModule("ConnectToToursDB"));
+            
 
             var container = builder.Build();
 

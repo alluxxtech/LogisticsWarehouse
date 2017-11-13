@@ -81,6 +81,6 @@ namespace LogisticsWarehouse.Models
     public class ConfigureTwoFactorViewModel
     {
         public string SelectedProvider { get; set; }
-        public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }
+        public ICollection<BLL.Models.SelectItemViewModel> Providers { get; set; }
     }
 }
