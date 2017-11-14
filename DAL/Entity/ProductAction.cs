@@ -14,7 +14,7 @@ namespace DAL.Entity
         [Key]
         public int Id { get; set; }
         [ForeignKey("UserProfile")]
-        public int UserProfileId { get; set; }
+        public string UserProfileId { get; set; }
         public UserProfile UserProfile { get; set; }
         public string Action { get; set; }
         public DateTime ActionTime { get; set; }

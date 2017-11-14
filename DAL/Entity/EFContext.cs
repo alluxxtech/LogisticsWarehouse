@@ -33,16 +33,16 @@ namespace DAL.Entity
             return base.Set<TEntity>();
         }
 
-        public DbSet<Country> Countries { get; set; }
-        public DbSet<City> Cities { get; set; }
-        public DbSet<Depot> Depots { get; set; }
-        public DbSet<GeneralInfo> GeneralInfos { get; set; }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<ProductAction> ProductActions { get; set; }
-        public DbSet<ProductStatus> ProductStatuses { get; set; }
-        //public DbSet<Archive> Archive { get; set; }
-        public DbSet<Company> Companies { get; set; }
-        public DbSet<UserProfile> UserProfiles { get; set; }
-        public DbSet<UserPosition> UserPositions { get; set; }
+        //public DbSet<Country> Countries { get; set; }
+        //public DbSet<City> Cities { get; set; }
+        //public DbSet<Depot> Depots { get; set; }
+        //public DbSet<GeneralInfo> GeneralInfos { get; set; }
+        //public DbSet<Product> Products { get; set; }
+        //public DbSet<ProductAction> ProductActions { get; set; }
+        //public DbSet<ProductStatus> ProductStatuses { get; set; }
+        ////public DbSet<Archive> Archive { get; set; }
+        //public DbSet<Company> Companies { get; set; }
+        //public DbSet<UserProfile> UserProfiles { get; set; }
+        //public DbSet<UserPosition> UserPositions { get; set; }
     }
 }

@@ -7,13 +7,13 @@ namespace DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class DataBaseisComplitewithoutArchive : IMigrationMetadata
+    public sealed partial class initialmigration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(DataBaseisComplitewithoutArchive));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initialmigration));
         
         string IMigrationMetadata.Id
         {
-            get { return "201711101743369_DataBase is Complite(without Archive)"; }
+            get { return "201711141647598_initial migration"; }
         }
         
         string IMigrationMetadata.Source

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace BLL.Models
@@ -79,6 +80,20 @@ namespace BLL.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public DateTime Birthday { get; set; }
+
+        public string Address { get; set; }
+
+        public int CompanyId { get; set; }
+
+        public int PositionId { get; set; }
+
+        public List<SelectItemViewModel> Positions { get; set; }
     }
 
     public class ResetPasswordViewModel

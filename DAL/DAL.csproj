@@ -78,9 +78,11 @@
     <Compile Include="Abstract\ICountryRepository.cs" />
     <Compile Include="Abstract\IEFContext.cs" />
     <Compile Include="Abstract\IStatusRepository.cs" />
+    <Compile Include="Abstract\IUserPositionRepository.cs" />
     <Compile Include="Concrete\CityRepository.cs" />
     <Compile Include="Concrete\CountryRepository.cs" />
     <Compile Include="Concrete\StatusRepository.cs" />
+    <Compile Include="Concrete\UserPositionRepository.cs" />
     <Compile Include="Entity\ProductAction.cs" />
     <Compile Include="Entity\Archive.cs" />
     <Compile Include="Entity\City.cs" />
@@ -95,28 +97,20 @@
     <Compile Include="Entity\Product.cs" />
     <Compile Include="Entity\ProductStatus.cs" />
     <Compile Include="Entity\UserPosition.cs" />
-    <Compile Include="Migrations\201711101743369_DataBase is Complite%28without Archive%29.cs" />
-    <Compile Include="Migrations\201711101743369_DataBase is Complite%28without Archive%29.Designer.cs">
-      <DependentUpon>201711101743369_DataBase is Complite%28without Archive%29.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201711121241208_change UserProfiles%28del DepotId%29.cs" />
-    <Compile Include="Migrations\201711121241208_change UserProfiles%28del DepotId%29.Designer.cs">
-      <DependentUpon>201711121241208_change UserProfiles%28del DepotId%29.cs</DependentUpon>
+    <Compile Include="Migrations\201711141647598_initial migration.cs" />
+    <Compile Include="Migrations\201711141647598_initial migration.Designer.cs">
+      <DependentUpon>201711141647598_initial migration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201711101743369_DataBase is Complite%28without Archive%29.resx">
-      <DependentUpon>201711101743369_DataBase is Complite%28without Archive%29.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201711121241208_change UserProfiles%28del DepotId%29.resx">
-      <DependentUpon>201711121241208_change UserProfiles%28del DepotId%29.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201711141647598_initial migration.resx">
+      <DependentUpon>201711141647598_initial migration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
