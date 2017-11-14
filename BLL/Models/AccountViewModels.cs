@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace LogisticsWarehouse.Models
+namespace BLL.Models
 {
     public class ExternalLoginConfirmationViewModel
     {
@@ -18,7 +18,7 @@ namespace LogisticsWarehouse.Models
     public class SendCodeViewModel
     {
         public string SelectedProvider { get; set; }
-        public ICollection<System.Web.Mvc.SelectListItem> Providers { get; set; }
+        public ICollection<BLL.Models.SelectItemViewModel> Providers { get; set; }
         public string ReturnUrl { get; set; }
         public bool RememberMe { get; set; }
     }

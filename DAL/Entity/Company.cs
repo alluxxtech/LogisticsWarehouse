@@ -12,7 +12,9 @@ namespace DAL.Entity
     {
         [Key]
         public int Id { get; set; }
+        [Required, StringLength(maximumLength: 256)]
         public string Name { get; set; }
+        [Required, StringLength(maximumLength: 256)]
         public string CorpEmail { get; set; }
         public virtual ICollection<Depot> CompanyDepots { get; set; }
         public virtual ICollection<UserProfile> CompanyProfiles { get; set; }

@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 namespace DAL.Entity.Identity
 {
-    public class AppUser :IdentityUser
+    public class AppUser : IdentityUser
     {
         [ForeignKey("UserProfile")]
-        public int ProfileId { get; set; }
+        public string ProfileId { get; set; }
         public UserProfile UserProfile { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<AppUser> manager)

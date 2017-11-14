@@ -11,7 +11,7 @@ namespace DAL.Entity.Identity
     public class UserProfile
     {   
         [Key]
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime Birthday { get; set; }
@@ -19,12 +19,9 @@ namespace DAL.Entity.Identity
         [ForeignKey("Company")]
         public int CompanyId { get; set; }
         public Company Company { get; set; }
-       
         [ForeignKey("UserPosition")]
         public int PositionId { get; set; }
         public UserPosition UserPosition { get; set; }
-        [ForeignKey("Depots")]
-        public int DepotId { get; set; }
         public virtual ICollection<Depot> Depots { get; set; }
     }
 }
