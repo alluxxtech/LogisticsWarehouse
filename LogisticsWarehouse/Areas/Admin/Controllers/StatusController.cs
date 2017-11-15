@@ -9,6 +9,7 @@ using BLL.Models.Admin;
 
 namespace LogisticsWarehouse.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class StatusController : Controller
     {
         private IStatusProvider _statusProvider;
