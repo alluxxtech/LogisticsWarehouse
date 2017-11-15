@@ -20,5 +20,15 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 370px;
+}
+
+.center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.register-link {
+    margin-left: 25px;
 }
