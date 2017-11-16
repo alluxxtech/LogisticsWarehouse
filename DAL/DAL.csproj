@@ -101,6 +101,10 @@
     <Compile Include="Migrations\201711141647598_initial migration.Designer.cs">
       <DependentUpon>201711141647598_initial migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711161630296_edit company.cs" />
+    <Compile Include="Migrations\201711161630296_edit company.Designer.cs">
+      <DependentUpon>201711161630296_edit company.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -111,6 +115,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201711141647598_initial migration.resx">
       <DependentUpon>201711141647598_initial migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711161630296_edit company.resx">
+      <DependentUpon>201711161630296_edit company.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

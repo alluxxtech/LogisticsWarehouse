@@ -63,7 +63,18 @@ namespace BLL.Models
         public bool RememberMe { get; set; }
     }
 
-    public class RegisterViewModel
+    public class RegisterCompanyViewModel
+    {
+        public string CorporateEmail { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
+
+
+    }
+
+
+
+    public class RegisterUserViewModel
     {
         [Required]
         [EmailAddress]
@@ -88,8 +99,6 @@ namespace BLL.Models
         public DateTime Birthday { get; set; }
 
         public string Address { get; set; }
-
-        public int CompanyId { get; set; }
 
         public int PositionId { get; set; }
 

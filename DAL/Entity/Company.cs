@@ -16,6 +16,8 @@ namespace DAL.Entity
         public string Name { get; set; }
         [Required, StringLength(maximumLength: 256)]
         public string CorpEmail { get; set; }
+        [Required, StringLength(255)]
+        public string Address { get; set; }
         public virtual ICollection<Depot> CompanyDepots { get; set; }
         public virtual ICollection<UserProfile> CompanyProfiles { get; set; }
 

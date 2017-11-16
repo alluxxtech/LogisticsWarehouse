@@ -18,7 +18,7 @@ namespace BLL.Abstract
 
         Task<SignInStatus> VerifyCode(VerifyCodeViewModel model);
 
-        Task<IdentityResult> Register(RegisterViewModel model);
+        Task<IdentityResult> Register(RegisterUserViewModel model);
 
         Task<string> ConfirmEmail(string userId, string code);
 

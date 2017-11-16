@@ -48,7 +48,7 @@ namespace BLL.Concrete
             return result;
         }
 
-        public async Task<IdentityResult> Register(RegisterViewModel model)
+        public async Task<IdentityResult> Register(RegisterUserViewModel model)
         {
             var user = new AppUser { UserName = model.Email, Email = model.Email };
             var result = await _userManager.CreateAsync(user, model.Password);
@@ -57,7 +57,13 @@ namespace BLL.Concrete
                 Guid guid = Guid.NewGuid();
                 var userProfile = new UserProfile
                 {
-                    Id = user.Id
+                    Id = user.Id,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    Address = model.Address,
+                    Birthday = model.Birthday,
+                    CompanyId = model.CompanyId,
+                    PositionId = model.PositionId
                 };
                 
                 await _signInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
